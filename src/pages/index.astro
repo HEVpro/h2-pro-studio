@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Services from '../components/Services.astro';
+import Skills from '../components/Skills.astro';
+import Portfolio from '../components/Portfolio.astro';
+import Testimonials from '../components/Testimonials.astro';
+import Brands from '../components/Brands.astro';
+import ContactForm from '../components/ContactForm.astro';
+import Footer from '../components/Footer.astro';
+import { ThemeProvider } from '../components/ThemeProvider';
+---
+
+<Layout title="H2 Prod Studio - Software Solutions">
+  <ThemeProvider client:load>
+    <main class="bg-background text-foreground min-h-screen">
+      <Navbar />
+      <Hero />
+      <About />
+      <Services />
+      <Skills />
+      <Portfolio />
+      <Testimonials />
+      <Brands />
+      <ContactForm />
+      <Footer />
+    </main>
+  </ThemeProvider>
+</Layout>

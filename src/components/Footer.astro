@@ -1,0 +1,33 @@
+---
+import { Linkedin, Instagram, Facebook } from 'lucide-react';
+---
+
+<footer class="bg-background py-12">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-4 md:mb-0">
+        <a href="/" class="text-2xl font-bold text-primary">H2 Prod Studio</a>
+      </div>
+      <nav class="mb-4 md:mb-0">
+        <ul class="flex space-x-6">
+          <li><a href="#about" class="text-foreground hover:text-primary">About</a></li>
+          <li><a href="#services" class="text-foreground hover:text-primary">Services</a></li>
+          <li><a href="#portfolio" class="text-foreground hover:text-primary">Portfolio</a></li>
+          <li><a href="#contact" class="text-foreground hover:text-primary">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="flex space-x-4">
+        <a href="#" class="text-foreground hover:text-primary"><Linkedin /></a>
+        <a href="#" class="text-foreground hover:text-primary"><Instagram /></a>
+        <a href="#" class="text-foreground hover:text-primary"><Facebook /></a>
+      </div>
+    </div>
+    <div class="mt-8 text-center text-sm text-muted-foreground">
+      <p>&copy; 2023 H2 Prod Studio. All rights reserved.</p>
+      <p class="mt-2">
+        <a href="/privacy-policy" class="hover:text-primary">Privacy Policy</a> | 
+        <a href="/terms-and-conditions" class="hover:text-primary">Terms and Conditions</a>
+      </p>
+    </div>
+  </div>
+</footer>

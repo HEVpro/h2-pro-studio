@@ -1,0 +1,40 @@
+---
+import { Card, CardContent } from "@/components/ui/card";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+---
+
+<section id="testimonials" class="py-20 bg-secondary/10">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-primary">Trusted by many clients</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <Card>
+        <CardContent class="p-6">
+          <div class="flex items-center mb-4">
+            <Avatar class="w-12 h-12 mr-4">
+              <AvatarFallback>JH</AvatarFallback>
+            </Avatar>
+            <div>
+              <h3 class="font-semibold">Jenny Harris</h3>
+              <p class="text-sm text-muted-foreground">Photographer, Unsplash</p>
+            </div>
+          </div>
+          <p class="text-muted-foreground">"Jonathan has demonstrated outstanding performance in his work. He is not only creative in finding innovative solutions, but also efficient in delivering high-quality results."</p>
+        </CardContent>
+      </Card>
+      <Card>
+        <CardContent class="p-6">
+          <div class="flex items-center mb-4">
+            <Avatar class="w-12 h-12 mr-4">
+              <AvatarFallback>MJ</AvatarFallback>
+            </Avatar>
+            <div>
+              <h3 class="font-semibold">Michael Johnson</h3>
+              <p class="text-sm text-muted-foreground">CEO, TechStart</p>
+            </div>
+          </div>
+          <p class="text-muted-foreground">"Working with Jonathan was a game-changer for our startup. His designs not only look great but also significantly improved our user engagement and conversion rates."</p>
+        </CardContent>
+      </Card>
+    </div>
+  </div>
+</section>

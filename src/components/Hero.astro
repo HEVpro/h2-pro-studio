@@ -1,0 +1,48 @@
+---
+import { Button } from "@/components/ui/button";
+import { Linkedin, Instagram, Facebook } from 'lucide-react';
+---
+
+<section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+  <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-background z-0"></div>
+  <div class="container mx-auto px-4 z-10">
+    <div class="text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6 text-primary animate-fade-in">I'm Jonathan, UX/UI Designer and no-code Developer</h1>
+      <p class="text-xl md:text-2xl mb-8 text-muted-foreground max-w-2xl mx-auto">
+        I craft elegant solutions to complex problems, and I love the challenge of bringing those solutions to life with digital products.
+      </p>
+      <div class="flex justify-center space-x-4 mb-8">
+        <a href="#" class="text-foreground hover:text-primary"><Linkedin /></a>
+        <a href="#" class="text-foreground hover:text-primary"><Instagram /></a>
+        <a href="#" class="text-foreground hover:text-primary"><Facebook /></a>
+      </div>
+      <Button size="lg" class="animate-bounce">
+        Hire me
+      </Button>
+    </div>
+    <div class="mt-16 grid grid-cols-3 gap-8 text-center">
+      <div>
+        <h3 class="text-4xl font-bold text-primary">9+</h3>
+        <p class="text-muted-foreground">Years Experience</p>
+      </div>
+      <div>
+        <h3 class="text-4xl font-bold text-primary">67+</h3>
+        <p class="text-muted-foreground">Completed Projects</p>
+      </div>
+      <div>
+        <h3 class="text-4xl font-bold text-primary">21+</h3>
+        <p class="text-muted-foreground">Happy Clients</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in {
+    animation: fade-in 1s ease-out;
+  }
+</style>

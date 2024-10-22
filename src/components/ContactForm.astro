@@ -1,0 +1,42 @@
+---
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
+---
+
+<section id="contact" class="py-20 bg-secondary/10">
+  <div class="container mx-auto px-4">
+    <Card class="max-w-2xl mx-auto">
+      <CardHeader>
+        <CardTitle class="text-2xl font-bold text-center">Let's work together!</CardTitle>
+        <CardDescription class="text-center">
+          Get in touch to discuss your project
+        </CardDescription>
+      </CardHeader>
+      <CardContent>
+        <form class="space-y-4">
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label for="firstName" class="block text-sm font-medium mb-1">First Name</label>
+              <Input id="firstName" placeholder="John" />
+            </div>
+            <div>
+              <label for="lastName" class="block text-sm font-medium mb-1">Last Name</label>
+              <Input id="lastName" placeholder="Doe" />
+            </div>
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium mb-1">Email</label>
+            <Input id="email" type="email" placeholder="john@example.com" />
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium mb-1">Message</label>
+            <Textarea id="message" placeholder="Tell me about your project..." />
+          </div>
+          <Button type="submit" class="w-full">Send Message</Button>
+        </form>
+      </CardContent>
+    </Card>
+  </div>
+</section>

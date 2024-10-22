@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import { ThemeProvider } from '../components/ThemeProvider';
+---
+
+<Layout title="Privacy Policy - H2 Prod Studio">
+  <ThemeProvider client:load>
+    <main class="bg-background text-foreground min-h-screen">
+      <Navbar />
+      <div class="container mx-auto px-4 py-20">
+        <h1 class="text-4xl font-bold mb-8 text-primary">Privacy Policy</h1>
+        <div class="prose prose-invert max-w-none">
+          <p>Last updated: [Date]</p>
+          <p>This Privacy Policy describes how H2 Prod Studio ("we", "us", or "our") collects, uses, and discloses your personal information when you visit our website or use our services.</p>
+          
+          <h2>Information We Collect</h2>
+          <p>We collect information you provide directly to us, such as when you fill out a contact form or subscribe to our newsletter. This may include your name, email address, and any other information you choose to provide.</p>
+          
+          <h2>How We Use Your Information</h2>
+          <p>We use the information we collect to:</p>
+          <ul>
+            <li>Provide, maintain, and improve our services</li>
+            <li>Respond to your comments, questions, and requests</li>
+            <li>Send you technical notices, updates, security alerts, and support messages</li>
+            <li>Communicate with you about products, services, offers, promotions, and events</li>
+          </ul>
+          
+          <h2>Data Security</h2>
+          <p>We implement appropriate technical and organizational measures to protect the security of your personal information.</p>
+          
+          <h2>Changes to This Privacy Policy</h2>
+          <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+          
+          <h2>Contact Us</h2>
+          <p>If you have any questions about this Privacy Policy, please contact us at [contact email].</p>
+        </div>
+      </div>
+      <Footer />
+    </main>
+  </ThemeProvider>
+</Layout>

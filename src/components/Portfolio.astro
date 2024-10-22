@@ -1,0 +1,38 @@
+---
+import { Card, CardContent } from "@/components/ui/card";
+---
+
+<section id="portfolio" class="py-20 bg-background">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-primary">Featured Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <Card>
+        <CardContent class="p-0">
+          <img src="https://source.unsplash.com/random/800x600?app" alt="Project 1" class="w-full h-auto rounded-t-lg" />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold mb-2">Mobile App Design</h3>
+            <p class="text-muted-foreground">A sleek and intuitive mobile app interface for a fitness tracking application.</p>
+          </div>
+        </CardContent>
+      </Card>
+      <Card>
+        <CardContent class="p-0">
+          <img src="https://source.unsplash.com/random/800x600?website" alt="Project 2" class="w-full h-auto rounded-t-lg" />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold mb-2">E-commerce Website</h3>
+            <p class="text-muted-foreground">A modern and responsive e-commerce website built with no-code tools.</p>
+          </div>
+        </CardContent>
+      </Card>
+      <Card>
+        <CardContent class="p-0">
+          <img src="https://source.unsplash.com/random/800x600?branding" alt="Project 3" class="w-full h-auto rounded-t-lg" />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold mb-2">Brand Identity</h3>
+            <p class="text-muted-foreground">A comprehensive brand identity project for a tech startup.</p>
+          </div>
+        </CardContent>
+      </Card>
+    </div>
+  </div>
+</section>
